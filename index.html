@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Ссылки</title>
+</head>
+
+<h1>Ссылки</h1>
+
+<ol>
+    <li><a href="http://example.com">Example</a> </li>
+    <li><a href="https://example.com">Example</a> </li>
+    <li><a href="ftp://ftp.example.com/file.txt">ссылка на ftp без авторизации</a> </li>
+    <li><a href="ftp://user123:123@ftp.example.com/file.txt">ссылка на ftp с авторизацией</a> </li>
+    <li><a href="https://html5book.ru/css-shrifty/#about-color" class="site" target="_blank">ссылка на фрагмент
+            другой стр</a> </li>
+    <li><a href="#t1">Пол:</a> </li>
+    <li><a href="../../">относительная на стр в каталоге 2 ур выше;</a> </li>
+    <li><a href="../">относительная на стр в каталоге 1 ур выше;</a> </li>
+    <li><a href="https://www.onlinestor.com?product=socks&color=black&size=m">С двойным URL</a> </li>
+    <li><a title="http://example.com/">ссылку без href</a></li>
+    <li><a href=" ">ссылку с пустым href</a></li>
+    </li><a href="https://ru.wikipedia.org/wiki/Заглавная_страница" rel="nofollow"></a>
+    </li><a href="https://ru.wikipedia.org/wiki/Заглавная_страница" content="noindex"></a>
+    <li>На нашем сайте можно узнать все о <a href="http://example.com/about" title="Узнать о нас больше">нас</a>
+    <li><a href=”/”>сокращенная на главную</a></li>
+    <li><a href=”/news/12”>сокращенная ссылку на внутреннюю</a></li>
+    <li> <a href="http://example.com/news" title="Актуальное">список ссылок основной навигации сайта с подписями
+            title;</a> </li>
+    <ul>
+        <li><a href="http://example.com/about" title="Данные">Важное</a> </li>
+        <li><a href="http://example.com/contacts" title="Телефон">Связь</a> </li>
+    </ul>
+    <li><a href="https://webref.ru"><img src="image/shark.jpg" alt="">картиночка</a> </li>
+    <li><a href="http://example.com?parametr1=value1&parametr2=value2" id="galom"> ссылка с параметрами </a> </li>
+    <li><a href="https://example.com/"><img
+                src="https://st2.depositphotos.com/3765753/5349/v/450/depositphotos_53491489-stock-illustration-example-rubber-stamp-vector-over.jpg"
+                alt=""></a></li>
+    <li><img src="https://st2.depositphotos.com/3765753/5349/v/450/depositphotos_53491489-stock-illustration-example-rubber-stamp-vector-over.jpg"
+            usemap="#mapSquare" alt="">Левый верхний угол и справа полуокружность</li>
+    </li>
+    <li><a href="index.html">относительная ссылка на текущий каталог</a> </li>
+    <li><a href="about/about.html">относительная ссылка в каталоге about</a> </li>
+    <li><a href="index.html">сокращенная ссылка на главную </a></li>
+    <li><a href="/about.html">сокращенная ссылка на внутреннюю </a></li>
+
+</ol>
+<title>Анкета</title>
+</head>
+
+<body>
+
+    <body style="background-color: #fcee99e8">
+    </body>
+    <h1>Анкета</h1>
+    <label>
+        Имя:<br />
+        <input name="field-name-1" value="начальное значение" />
+    </label><br />
+
+    <label>
+        email:<br />
+        <input name="field-email" type="email" placeholder="Введите вашу почту" />
+    </label><br />
+
+    <label>
+        Дата рождения:<br />
+        <input name="field-date" value="2004-04-16" type="date" />
+    </label><br />
+
+    <label>
+        Биография:<br />
+        <textarea name="field-name-2"></textarea>
+    </label><br />
+
+
+
+    <label>
+        Сверхспособности:
+        <br />
+        <select name="field-name-4[]" multiple="multiple">
+            <option value="Значение1">Бессмертие</option>
+            <option value="Значение2" selected="selected">Проходить сквозь стены</option>
+            <option value="Значение3" selected="selected">левитация </option>
+        </select>
+    </label><br />
+
+    <h2 id="t1">Пол:</h2>:<br />
+    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1" />
+        женский</label>
+    <label><input type="radio" name="radio-group-1" value="Значение2" />
+        мужской</label><br />
+
+    Количество конечностей<br />
+    <label><input type="radio" name="radio2" value="1" />
+        1</label>
+    <label><input type="radio" name="radio2" value="2" />
+        2</label>
+    <label><input type="radio" name="radio2" value="3" />
+        3</label>
+    <label><input type="radio" name="radio2" value="4" />
+        4</label><br />
+
+    с контрактом ознакомлен (а) :<br />
+    <label><input type="checkbox" checked="checked" name="check-1" />
+        Подпись </label><br />
+
+    <form action="/" method="POST">
+        <input type="submit" value="Отправить" />
+
+    </form>
+
+
+</body>
+
+</html>
