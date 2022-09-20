@@ -1,117 +1,195 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <title>Ссылки</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
-<h1>Ссылки</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-<ol>
-    <li><a href="http://example.com">Example</a> </li>
-    <li><a href="https://example.com">Example</a> </li>
-    <li><a href="ftp://ftp.example.com/file.txt">ссылка на ftp без авторизации</a> </li>
-    <li><a href="ftp://user123:123@ftp.example.com/file.txt">ссылка на ftp с авторизацией</a> </li>
-    <li><a href="https://html5book.ru/css-shrifty/#about-color" class="site" target="_blank">ссылка на фрагмент
-            другой стр</a> </li>
-    <li><a href="#t1">Пол:</a> </li>
-    <li><a href="../../">относительная на стр в каталоге 2 ур выше;</a> </li>
-    <li><a href="../">относительная на стр в каталоге 1 ур выше;</a> </li>
-    <li><a href="https://www.onlinestor.com?product=socks&color=black&size=m">С двойным URL</a> </li>
-    <li><a title="http://example.com/">ссылку без href</a></li>
-    <li><a href=" ">ссылку с пустым href</a></li>
-    </li><a href="https://ru.wikipedia.org/wiki/Заглавная_страница" rel="nofollow"></a>
-    </li><a href="https://ru.wikipedia.org/wiki/Заглавная_страница" content="noindex"></a>
-    <li>На нашем сайте можно узнать все о <a href="http://example.com/about" title="Узнать о нас больше">нас</a>
-    <li><a href=”/”>сокращенная на главную</a></li>
-    <li><a href=”/news/12”>сокращенная ссылку на внутреннюю</a></li>
-    <li> <a href="http://example.com/news" title="Актуальное">список ссылок основной навигации сайта с подписями
-            title;</a> </li>
-    <ul>
-        <li><a href="http://example.com/about" title="Данные">Важное</a> </li>
-        <li><a href="http://example.com/contacts" title="Телефон">Связь</a> </li>
-    </ul>
-    <li><a href="https://webref.ru"><img src="image/shark.jpg" alt="">картиночка</a> </li>
-    <li><a href="http://example.com?parametr1=value1&parametr2=value2" id="galom"> ссылка с параметрами </a> </li>
-    <li><a href="https://example.com/"><img
-                src="https://st2.depositphotos.com/3765753/5349/v/450/depositphotos_53491489-stock-illustration-example-rubber-stamp-vector-over.jpg"
-                alt=""></a></li>
-    <li><img src="https://st2.depositphotos.com/3765753/5349/v/450/depositphotos_53491489-stock-illustration-example-rubber-stamp-vector-over.jpg"
-            usemap="#mapSquare" alt="">Левый верхний угол и справа полуокружность</li>
-    </li>
-    <li><a href="index.html">относительная ссылка на текущий каталог</a> </li>
-    <li><a href="about/about.html">относительная ссылка в каталоге about</a> </li>
-    <li><a href="index.html">сокращенная ссылка на главную </a></li>
-    <li><a href="/about.html">сокращенная ссылка на внутреннюю </a></li>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Задание №2</title>
 
-</ol>
-<title>Анкета</title>
+
 </head>
 
 <body>
+    <header id="fon">
 
-    <body style="background-color: #fcee99e8">
-    </body>
-    <h1>Анкета</h1>
-    <label>
-        Имя:<br />
-        <input name="field-name-1" value="начальное значение" />
-    </label><br />
+        <div id="foni">
+            <img id="logo" src="YWj_Q845Nz8.jpg">
+            <h1>Nikol Gortez</h1>
+        </div>
+    </header>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap');
+    </style>
 
-    <label>
-        email:<br />
-        <input name="field-email" type="email" placeholder="Введите вашу почту" />
-    </label><br />
+    <nav class="nav container"> <a href="#link">Список </a>|<a href="#form">Форма</a>|<a href="#table">Таблица</a>
 
-    <label>
-        Дата рождения:<br />
-        <input name="field-date" value="2004-04-16" type="date" />
-    </label><br />
+    </nav>
 
-    <label>
-        Биография:<br />
-        <textarea name="field-name-2"></textarea>
-    </label><br />
+    <div class="flex-box container">
+        <h2 id="head2">Ссылки</h2>
+        <section class="link" id="link">
+            <ol class="link__list">
+                <li class="link__menu__item"><a href="http://ru.wikipedia.org/?r=5">Абсолютная гиперссылка на главную
+                        страницу сайта</a></li>
+                <li class="link__menu__item"><a href="https://ru.wikipedia.org/?r=5">Абсолютная на главную сайта в
+                        протоколе https</a></li>
+                <li><a href="ftp://public.ftp-servers.example.com/mydirectory/myfile.txt">ссылку на файл на сервере FTP
+                        без авторизации</a></li>
+                <li class="link__menu__item"><a href="ftp://user:228@2ch.hk/files.file.html">Ссылку на файл на сервере
+                        FTP с авторизацией</a></li>
+                <li class="link__menu__item"><a href="http://2ch.hk#anchor">Ссылка на фрагмент страницы некоторого
+                        сайта</a></li>
+                <li class="link__menu__item"><a href="#top">Ссылка на фрагмент текущей страницы</a></li>
+                <li class="link__menu__item"><a
+                        href="https://en.wikipedia.org/w/index.php?go=Go&search=bcvcvbbvccvb&title=Special%3ASearch&ns0=1">Ссылка
+                        с двумя параметрами в URL</a></li>
+                <li class="link__menu__item">
+                    Список ссылок основной навигации сайта с подписями title
+                    <ul>
+                        <li><a href="#head1" title="Нумерованный список гиперссылок">Нумерованный список гиперссылок</a>
+                        </li>
+                        <li><a href="#head2" title="Форма">Форма</a></li>
+                    </ul>
+                </li>
+                <li class="link__menu__item"><a>Ссылка без href</a></li>
+                <li class="link__menu__item"><a href="">Ссылка с пустым href</a></li>
+                <li class="link__menu__item"><a href="https://vk.com/nikolinn" rel="nofollow">Ссылка, по которой
+                        запрещен переход поисковикам</a></li>
+                <li class="link__menu__item"><a href="https://vk.com/nikolinn" rel="nofollow">
+                        <!--noindex-->Ссылка, запрещенная для индексации поисковиками
+                        <!--/noindex-->
+                    </a></li>
+                <li class="link__menu__item">
+                    <p>Контекстная <a href="https://vk.com/nikolinn">ссылка</a> в тексте абзаца</p>
+                </li>
+                <li class="link__menu__item">Ссылка-изображение<br />
+                    <a href="https://vk.com/nikolinn"><img
+                            src="https://sun9-35.userapi.com/impg/wSoFfv5c3xBSbw_RbjFlcIA2t4crg8DHNyQBxg/2s7qkk8ZabU.jpg?size=1057x1620&quality=95&sign=48f4265bbcfd2e86371f03c2487c6eed&type=album"
+                            width="300" height="400" alt="Описание картинки"></a>
+                </li>
+                <li class="link__menu__item">
+                    Ссылки из прямоугольных и круглых областей картинки<br />
+                    <img src="https://sun9-50.userapi.com/impg/rAQBEOk77SlshO8jBaZmKjT_yd01tmyK1zZj5Q/65nwGTTPKu4.jpg?size=1915x1620&quality=95&sign=dc22d0aec0acff0c5a116ffa88792689&type=album"
+                        width="310" height="242" alt="Описание картинки" usemap="#mymap">
+                    <map name="mymap">
+                        <area shape="rect" coords="40,25,90,150"
+                            href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Philly_Thinker.JPG/330px-Philly_Thinker.JPG"
+                            alt="Прямоугольная область">
+                        <area shape="circle" coords="100,210,25"
+                            href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Almeida_J%C3%BAnior_-_Mo%C3%A7a_com_Livro.jpg/330px-Almeida_J%C3%BAnior_-_Mo%C3%A7a_com_Livro.jpg"
+                            alt="Круглая область">
+                    </map>
+                </li>
+                <li class="link__menu__item"><a href="page">Относительная ссылка на страницу в текущем каталоге</a></li>
+                <li class="link__menu__item"><a href="./about/page">Относительная ссылка на страницу в каталоге
+                        about</a></li>
+                <li class="link__menu__item"><a href="../page">Относительная ссылка на страницу в каталоге уровнем выше
+                        текущего</a></li>
+                <li class="link__menu__item"><a href="../../page">Относительная ссылка на страницу в каталоге двумя
+                        уровнями выше текущего</a></li>
+                <li class="link__menu__item"><a href="/">Сокращенная ссылка на главную</a></li>
+                <li class="link__menu__item"><a href="/pages/page">Сокращенная ссылка на внутреннюю</a></li>
+            </ol>
+        </section>
+    </div>
+    <div>
+        <table id="table">
+            <caption>
+                <h2>Таблица</h2>
+            </caption>
+            <tr>
+                <th>Колонка 1</th>
+                <th>Колонка 2</th>
+                <th>Колонка 3</th>
+            </tr>
 
+            <tr>
+                <td colspan="2">Ячейка 11</td>
+                <td>Ячейка 11</td>
+            </tr>
 
+            <tr class="tab">
+                <td colspan="2">Ячейка 22 </td>
+                <td>Ячейка 22 </td>
+            </tr>
 
-    <label>
-        Сверхспособности:
-        <br />
-        <select name="field-name-4[]" multiple="multiple">
-            <option value="Значение1">Бессмертие</option>
-            <option value="Значение2" selected="selected">Проходить сквозь стены</option>
-            <option value="Значение3" selected="selected">левитация </option>
-        </select>
-    </label><br />
+            <tr>
+                <td>Ячейка 33</td>
+                <td>Ячейка 33</td>
+                <td>Ячейка 33</td>
+            </tr>
 
-    <h2 id="t1">Пол:</h2>:<br />
-    <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1" />
-        женский</label>
-    <label><input type="radio" name="radio-group-1" value="Значение2" />
-        мужской</label><br />
+            <tr class="tab">
+                <td>Ячейка 44</td>
+                <td colspan="2">Ячейка 44</td>
+            </tr>
 
-    Количество конечностей<br />
-    <label><input type="radio" name="radio2" value="1" />
-        1</label>
-    <label><input type="radio" name="radio2" value="2" />
-        2</label>
-    <label><input type="radio" name="radio2" value="3" />
-        3</label>
-    <label><input type="radio" name="radio2" value="4" />
-        4</label><br />
+            <tr>
+                <td>Ячейка 55</td>
+                <td>Ячейка 55</td>
+                <td>Ячейка 55</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2 id="head2">Форма</h2>
+        <form action="https://www.example.com" method="POST" class="form__btn" id="form">
+            <label>
+                Имя:<br />
+                <input name="field-name-1" value="Введите имя" type="name" />
+            </label><br />
 
-    с контрактом ознакомлен (а) :<br />
-    <label><input type="checkbox" checked="checked" name="check-1" />
-        Подпись </label><br />
-
-    <form action="/" method="POST">
-        <input type="submit" value="Отправить" />
-
-    </form>
-
-
+            <label>
+                Email:<br />
+                <input name="field-email" value=" " type="email" />
+            </label><br />
+            <label>
+                Дата рождения:<br />
+                <input name="field-date" value="2004-04-16" type="date" />
+            </label><br />
+            Количество конечностей:<br />
+            <label>
+                <input type="radio" name="radio-group-1" value="1" />
+                1
+            </label>
+            <label>
+                <input type="radio" name="radio-group-1" value="2" />
+                2
+            </label>
+            <label>
+                <input type="radio" name="radio-group-1" value="3" />
+                3
+            </label>
+            <label>
+                <input type="radio" checked="checked" name="radio-group-1" value="4" />
+                4
+            </label>
+            <label>
+                Сверхспособности:<br />
+                <select name="p" multiple="multiple">
+                    <option value="levitation" selected="selected">Левитация</option>
+                    <option value="passingthroughwalls">Прохождение сквозь стены</option>
+                    <option value="immortality">Бессмертие</option>
+                </select>
+            </label><br />
+            <label>
+                Биография:<br />
+                <textarea name="bio"></textarea>
+            </label><br />
+            С контрактом ознакомлен(а):<br />
+            <label>
+                <input type="checkbox" checked="checked" name="check-1" />
+            </label><br />
+            <input type="submit" value="Отправить" />
+    </div>
+    <footer>(c)Maksimenko Viktoria 2022</footer>
 </body>
 
 </html>
