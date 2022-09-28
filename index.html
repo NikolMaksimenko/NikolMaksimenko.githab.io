@@ -2,18 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Задание №2</title>
-
-
+    <title>Задание №3</title>
+    <meta name="viewport" content="width=divice-width,initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1">
 </head>
 
 <body>
@@ -24,17 +16,14 @@
             <h1>Nikol Gortez</h1>
         </div>
     </header>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&display=swap');
-    </style>
 
-    <nav class="nav container"> <a href="#link">Список </a>|<a href="#form">Форма</a>|<a href="#table">Таблица</a>
+    <nav class="nav container"> <a href="#link">Список </a> <a href="#form">Форма</a> <a href="#table">Таблица</a>
 
     </nav>
 
-    <div class="flex-box container">
+    <div class="flex-box container" id="link">
         <h2 id="head2">Ссылки</h2>
-        <section class="link" id="link">
+        <section class="link">
             <ol class="link__list">
                 <li class="link__menu__item"><a href="http://ru.wikipedia.org/?r=5">Абсолютная гиперссылка на главную
                         страницу сайта</a></li>
@@ -99,8 +88,8 @@
             </ol>
         </section>
     </div>
-    <div>
-        <table id="table">
+    <div id="table">
+        <table>
             <caption>
                 <h2>Таблица</h2>
             </caption>
@@ -138,9 +127,9 @@
             </tr>
         </table>
     </div>
-    <div>
+    <div id="form">
         <h2 id="head2">Форма</h2>
-        <form action="https://www.example.com" method="POST" class="form__btn" id="form">
+        <form action="https://www.example.com" method="POST" class="form__btn">
             <label>
                 Имя:<br />
                 <input name="field-name-1" value="Введите имя" type="name" />
